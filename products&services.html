@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{  
+            text-align: center;
+            padding-top: 30px;
+        }
+        hr{
+            width:3%;
+            padding: 2px;
+            margin-top: -15px;
+            background-color: #2D3192;
+            border: transparent;
+        }
+        body{
+            background-color: #E9EAEC;
+        }
+        body>div{
+            width: 97%;
+            margin: auto;
+            background-color: white;
+        }
+        #main{
+            width:80%;
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,auto);
+            gap: 32px;
+            margin: auto;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        #main>div{
+            border:1px solid rgb(163, 156, 156);
+            border-radius: 5px;
+            display: block;
+            text-align: center;
+            width: 220px;
+            padding: 20px;
+        }
+        #main>div:hover{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #main>div>img{
+            height: 200px;
+            width: 50%;
+        }
+        #main>div>a{
+            color: #068076;
+            font-weight: bold;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        #main>div>h2>a{
+            color: #2D3192;
+            text-decoration: none;
+        }
+        #main+button{
+            display:flex;
+            margin: auto;
+            margin-top: 30px;
+            padding: 14px 22px;
+            color: #068076;
+            border: 1px solid #068076;
+            background-color: white;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        #main+button:hover{
+            cursor: pointer;
+            background-color: #068076;
+            color: white;
+        }
+        div>h2~p{
+            color: gray;
+        }
+
+        @media screen and (min-width:651px) and (max-width:1024px) {
+            #main{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(4,auto);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        }
+        @media screen and (min-width:320px) and (max-width:650px) {
+            #main{
+            grid-template-columns: auto;
+            grid-template-rows: repeat(8,auto);
+            gap: 5px;
+            margin-top: 10px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Products & Services</h2>
+    <hr>
+    <div id="main">
+        <div>
+            <img src="https://3.imimg.com/data3/KH/GI/MY-3904945/foundation-250x250.jpg" alt="">
+            <h2><a href="">MakeUp</a></h2>
+            <p>Fondation</p>
+            <p>Pan Cake Beauiy Cosmetics</p>
+            <p>Comoact Power</p>
+            <a href="">View Details ></a>
+        </div>
+        <div>
+            <img src="https://3.imimg.com/data3/MW/GA/MY-3904945/lipstick-250x250.jpg" alt="">
+            <h2><a href="">Lips</a></h2>
+            <p>Lipstick</p>
+            <p>Lip Liner</p>
+            <p>Lip Gloss</p>
+            <a href="">View Details ></a>
+        </div>
+        <div>
+            <img src="https://3.imimg.com/data3/QF/CO/MY-3904945/mascara-250x250.jpg" alt="">
+            <h2><a href="">For Eyes</a></h2>
+            <p>Mascara</p>
+            <p>Eye Shadow</p>
+            <p>Eye Liner</p>
+            <a href="">View Details ></a>
+        </div>
+        <div>
+            <img src="https://3.imimg.com/data3/QD/KT/MY-3904945/lip-balm-250x250.jpg" alt="">
+            <h2><a href="">LipCare</a></h2>
+            <p>Lip Balm</p>
+            <p>Lip Gaurd</p>
+            <p>.</p>
+            <a href="">View Details ></a>
+        </div>
+        <div>
+            <img src="https://3.imimg.com/data3/TP/WM/MY-3904945/sindoor-250x250.jpg" alt="">
+            <h2><a href="">Traditional Items</a></h2>
+            <p>Sindoor</p>
+            <p>Kajal Eye Cosmetic</p>
+            <p>.</p>
+            <a href="">View Details ></a>
+        </div>
+        <div>
+            <img src="https://3.imimg.com/data3/BL/JM/MY-3904945/npr-250x250.jpg" alt="">
+            <h2><a href="">For Nails</a></h2>
+            <p>NPR Beauty Cosmetic</p>
+            <p>Nail Enamel</p>
+            <p>.</p>
+            <a href="">View Details ></a>
+        </div>
+        <div>
+            <img src="https://3.imimg.com/data3/MV/NT/MY-3904945/mix-fruit-scrub-250x250.jpg" alt="">
+            <h2><a href="">Scrubs</a></h2>
+            <p>Mixed Fruit Scrub</p>
+            <p>Fairness Scrub</p>
+            <p>Facial Scrub- Walnut & Apricot</p>
+            <a href="">View Details ></a>
+        </div>
+        <div>
+            <img src="https://3.imimg.com/data3/IR/ID/MY-3904945/massage-cream-250x250.jpg" alt="">
+            <h2><a href="">Creams</a></h2>
+            <p>Massage Cream</p>
+            <p>Cold Cream</p>
+            <p>.</p>
+            <a href="">View Details ></a>
+        </div>
+    </div>
+    <button>View Complete Range</button>
+    </div>
+    
+</body>
+</html>

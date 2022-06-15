@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            background-color: #E9EAEC;
+            margin-left: 5%;
+        }
+        body>div{
+            background-color: white;
+            display: flex;
+            width: 95%; 
+            padding-left: 2%;
+        }
+        #box{
+            display:grid;
+            grid-template-columns: repeat(7,11%);
+            gap: 1%;
+            padding-bottom: 60px;
+        }
+        #box>div{
+            border: 1px solid #DADADA;
+            background-color: #F6F6F6;
+            border-radius: 5px;
+            padding: 0px 10px;
+        }
+        #box>div>img{
+            width:100%;
+            height: 35%;
+            border-radius: 5px 5px 0px 0px;
+        }
+        #box>div>a{
+            font-size: 14px;
+            color: #2e3192;
+            text-decoration: none;
+        }
+        #box>div>a+p{
+            font-weight: bold;
+            font-size: 15x;
+            margin-top: -1px;
+        }
+        #box>div>button{
+            background-color: #00A699;
+            border: 1px solid #DADADA;
+            color: white;
+            padding: 7px 22px;
+            font-size: 12px;
+            border-radius: 14px;
+            border: transparent;
+        }
+        #box>div>button+p{
+            font-size: 13px;
+            margin-bottom: -1px;
+        }
+        #box-2{
+            display: block;
+            border: 1px solid #2E3192;
+            width:43%;
+            padding: 24px;
+            margin-left: 20%;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.39) 0px 0px 5px 5px;
+            margin-bottom: 50px;
+        }     
+        #box-2>div{
+            color: #2E31AA;
+            font-size: 21px;
+            font-weight: bold;
+        }
+        #box-2>form>input,#box-2>form>div>div{
+            display: flex;
+            margin-left: 8%;
+            padding: 12px;
+            border-radius: 6px ;
+            border: transparent;
+            border: 1px solid rgb(173, 171, 171);
+        }
+        #box-2>form>div{
+                display: flex;
+                margin-top: 30px;
+        }
+        #box-2>form>div>input{
+            padding: 8px;
+        }
+        #box-2>form>div>button{
+            padding: 12px;
+            color: white;
+            font-weight: bold;
+            background-color: #00A699;
+            border: transparent;
+            border-radius: 5px ;
+            margin-left: 66%;
+        }
+        form>div>input:nth-child(2){
+            width:65%;
+            margin-left: 7%;
+            
+        }
+        #qty{
+            width:21%;
+            margin-left: 18%;
+
+        }
+        #typ{
+            width:21%;
+        }
+       #name{
+            width:45%;
+            margin-left: 22%;
+       }
+       #des{
+        width:130%;
+       }
+       #mobile{
+        width:38%;
+       }
+        @media screen and (min-width:625px) and  (max-width:1024px){
+        #box{
+            grid-template-columns: repeat(3,30%);
+            grid-template-rows: repeat(3,30%);
+        }
+       }
+        @media screen and (min-width:320px) and (max-width:650px) {
+            #box{
+            grid-template-columns: repeat(2,40%);
+            grid-template-rows: repeat(4,25%);
+
+        }
+        #box-2>form>div>button{
+            margin-left: 50%;
+        }
+       }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Ready to Ship Products in Similar Categories</h2>
+    </div>
+    
+    <div id="box">
+        <div>
+            <img src="https://5.imimg.com/data5/ECOM/Default/2022/6/UU/PA/IS/9422220/hair-nose-lip-3-color-single-lipstick-moisturizing-color-waterproof-temptation-of-angels-222-500x500.jpg" alt="">
+            <a href="">3-color Single Lipstick...</a>
+            <p>₹ 1,499 / Unit</p>
+            <button>Buy Now</button>
+            <p>My Online Collection Store</p>
+        </div>
+        <div>
+            <img src="https://5.imimg.com/data5/ECOM/Default/2022/5/OV/MA/BH/112041886/jpg-20220424-122355-0000-500x500.jpg" alt="">
+            <a href="">Natural And Chemical Free... </a>
+            <p>₹ 450</p>
+            <button>Buy Now</button>
+            <p>Mahashivaa- Golden Store</p>
+        </div>
+        <div>
+            <img src="https://5.imimg.com/data5/ECOM/Default/2022/5/EP/OO/CJ/65058394/h2c244c67301f4fbd8f4a53e4689c4c3eh-500x500.png" alt="">
+            <a href="">5 In 1 Lipstick Combination... </a>
+            <p>₹ 499</p>
+            <button>Buy Now</button>
+            <p>TRENDY FASHION HUB</p>
+        </div>
+        <div>
+            <img src="https://5.imimg.com/data5/ECOM/Default/2022/6/FF/NK/FN/61819412/florallips2-500x500.jpg" alt="">
+            <a href="">Qibest Liquid Highlighter... </a>
+            <p>₹ 699</p>
+            <button>Buy Now</button>
+            <p>Artist Space </p>
+        </div>
+        <div>
+            <img src="https://5.imimg.com/data5/ECOM/Default/2022/5/IG/QH/JC/147540438/product-image-1933811160-500x500.jpg" alt="">
+            <a href="">Classical Carved Lipsticks Set-... </a>
+            <p>₹ 2,918</p>
+            <button>Buy Now</button>
+            <p>Aadhya Collections</p>
+        </div>
+        <div>
+            <img src="https://5.imimg.com/data5/ECOM/Default/2022/2/AY/IF/UV/11390531/makeasplash-500x500.jpg" alt="">
+            <a href="">Gush Beauty Play Paint- Ma... </a>
+            <p>₹ 550</p>
+            <button>Buy Now</button>
+            <p>Garima Collection</p>
+        </div>
+        <div>
+            <img src="https://5.imimg.com/data5/ECOM/Default/2022/3/VS/YZ/LH/149518787/2-500x500.png" alt="">
+            <a href="">Pinkline Liquid Matte Lipstick... </a>
+            <p>₹ 799</p>
+            <button>Buy Now</button>
+            <p>AM Enterprice</p>
+        </div>
+    </div>
+    <div> <div id="box-2">
+        <div>Tell us what you need, and we'll help you get quotes</div>
+        <form>
+            <div>
+                <label>I want quotes for</label>
+                <input type="text" placeholder="Enter Product / Service Name" value="Cosmetics, Hair & Beauty Products">
+            </div>
+            <div>
+                <label>Mobile Number</label>
+                <div>+91</div>
+                <input id="mobile" type="number" placeholder="Enter your Mobile">
+            </div>
+            <div>
+                <label>Name</label>
+                <input id="name" type="text" placeholder="Enter Your Name">
+            </div>
+            <div>
+                <label>Quantity</label>
+                <input id="qty" type="number" placeholder="Number of items">
+                <input id="typ" type="text" placeholder="Type" value="Piece">
+            </div>
+           <div>
+            <label>Briefly describe your requirement</label>
+            <input  id="des" type="text" placeholder="Additional details about your requirement...">
+           </div>
+           <div>
+            <button>Submit Requirement</button>
+           </div>
+            
+        </form>
+    </div></div>
+   
+</body>
+</html>

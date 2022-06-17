@@ -54,6 +54,10 @@ body > :first-child > h3 > span{
     font-size: 13px;
     color: rgb(160, 159, 159);
     font-weight: 100px;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .card > div > *:hover {

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #Humhaidon{
+ width: 1000px;
+ height:1200px;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+display: flex;
+margin: auto;  
+}
+    .bean{
+        margin: 10px;
+        
+    }
+    
+
+</style>
+</head>
+<body>
+    <div id="Humhaidon"></div>
+</body>
+</html>
+<script>
+    var datafromprod=JSON.parse(localStorage.getItem("cart"))
+   datafromprod.map(function(elem){
+    var LOL=document.createElement("div")
+    LOL.getAttribute("class","bean")
+    
+    var pic=document.createElement("img")
+    pic.src=elem.photo
+    
+    var Name=document.createElement("p")
+   Name.innerText=elem.naam;
+
+    var COmp=document.createElement("p")
+    COmp.innerText=elem.company
+    
+    var daam=document.createElement("h4")
+    daam.innerText=elem.price
+    
+    LOL.append(pic,Name,COmp,daam)
+    document.querySelector("#Humhaidon").append(LOL)
+
+   })
+
+</script>

@@ -1606,3 +1606,8 @@ ul {
         border-radius: 3px;
         border: rgb(234,234,234);
     }
+    a{
+        text-decoration: none;
+        background-color:rgb(46,49,146) ;
+        color: white;
+    }

@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+<style>
+    *{
+        font-family: arial
+    }
+    #naVbar>div:first-child{
+ display: flex;
+ width: 25%;
+
+ height: auto;
+    }
+    #naVbar>div:first-child>img{
+      margin-top: 14px;
+        height: 50%;
+    }
+    #naVbar{
+        display: flex;
+   
+        height: 80px;
+        width: 1250px;
+        margin: auto;
+       justify-content: space-between;
+       position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    background-color: white;
+    }
+    img+div>h2{
+        color: gray;
+        font-size: 25px;
+    font-weight: 400;
+    margin-top: 25px;
+ }
+    #last{
+      width: 16%;
+        color: white;
+        background-color: rgb(46,49,146);
+        height: 70%;
+        border-radius: 7px;
+        font-size: 16px;
+    font-weight: 400;
+text-align:center;
+box-sizing: border-box;
+margin-top: 10px;
+        }
+        button[type="submit"] {
+background-color: rgb(42,100,98);
+color: white;
+height: 60px;
+width: 120px;
+border-radius: 7px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+        }
+        input{
+            border: 1px solid white;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+        input[type="text"]{
+            opacity: 1;
+         width: 510px;
+         margin-top: 10px;
+         height: 60px;
+        border-radius: 7px;
+     }
+        .unit { 
+  position: absolute; 
+  display: block; 
+  margin-top: 31px; 
+  margin-left: 10px;
+   
+}
+input[type='text']::placeholder
+    {   
+       padding-left: 70px;
+       font-size: 17px; 
+        /* for Chrome, Firefox, Opera */ /* anotherrone*/
+    }
+    .vertical {
+            border-left: 1px solid gray;
+            height: 40px;
+            margin-left: 45px;
+            margin-top: -31px;
+       }
+#wears{
+    display: flex;
+      
+        height: 140px;
+        width: 1200px;
+        margin: auto;
+       justify-content: space-between;
+       margin-top: 50px;
+}
+#wears>div{
+
+width: 10%;
+height:100%;
+margin: 5px;
+text-align: center;
+
+
+
+}
+.round{
+    display: flex;
+   justify-content: center;
+align-items: center;
+box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+border-radius:200% ;
+height: 45%;
+margin-left: 20px;
+width: 65px;
+}
+.round>img{
+    height: 30px;
+}
+#Picles{
+        width: 1190px;
+        display: flex;
+      
+         
+        margin: auto;
+        margin-top: 30px; 
+        height: auto; 
+}
+.uparka{
+    height: auto;
+    display: flex;
+    width: 1190px;
+    margin: auto;
+    margin-top: 20px;
+  
+
+}
+.Logowala{
+    display: flex;
+   justify-content: center;
+align-items: center;
+box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+border-radius:200%;
+width: 60px;
+
+}
+.likhnewala{
+    margin-left: 10px;
+}
+#sabhipicshai{
+   
+  margin-top:15px;
+    margin: auto;
+
+   width:1150px;
+   height:970px;
+   display: grid; 
+   grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3,300px);
+    grid-template-areas: 
+    "a b c c d"
+    "e e c c f"
+    "e e g h 0"
+;    
+}
+#sabhipicshai>div{
+
+margin: 10px;
+text-align: left;
+
+
+}
+#sabhipicshai>div:nth-child(1){
+grid-area: a;
+height: 290px;
+}
+#sabhipicshai>div:nth-child(2){
+grid-area: b;
+height: 290px;
+}
+#sabhipicshai>div:nth-child(3){
+grid-area: c;
+height: 540px;
+
+
+}
+#sabhipicshai>div:nth-child(4){
+grid-area: d;
+height: 290px;
+
+}
+#sabhipicshai>div:nth-child(5){
+grid-area: e;
+height: 540px;
+margin-top: 70px;
+
+}
+#sabhipicshai>div:nth-child(6){
+grid-area: f;
+height: 290px;
+margin-top: 60px;
+}
+#sabhipicshai>div:nth-child(7){
+grid-area: g;
+margin-top: -20px;
+height: 290px;
+}
+#sabhipicshai>div:nth-child(8){
+    grid-area: h;
+    margin-top: -20px;
+    height: 290px;
+} 
+
+.onlyimage{
+    margin: auto;
+   width:100%;
+  height: 70%;
+ 
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+} 
+.onlyimage>img{
+   
+    width: 80%;
+    height: 100%;
+} 
+#sabhipicshai+button{
+    margin-left: 650px;
+    height: 50px;
+    width: 150px;
+    font-size: 17px;
+border:1px solid gray ;
+   border-radius: 8px;
+}
+p+p{
+    font-size: 13px;
+    margin-top: -12px;
+    
+}
+p+h4{
+    color: blue;
+    margin-top: -10px;
+    cursor: pointer;
+}  
+.addme{
+    background-color: purple;
+  color: white;
+  cursor: pointer;
+    }
+.addme:hover{
+    background-color:chartreuse;
+  color: white;
+}
+#flexwalipics{
+   display: flex;
+  
+    margin: auto;
+
+   width:1200px;
+  
+   height: 450px;
+   margin-top: 10px;
+
+} 
+#flexwalipics>div{
+   
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+} 
+#flexwalipics+button{
+    margin-left: 650px;
+    height: 50px;
+    width: 150px;
+    font-size: 17px;
+border:1px solid gray;
+   border-radius: 8px;
+   margin-top: 50px;
+} 
+.onlyimage{
+    box-shadow: none;
+   
+}  
+.onlyimage>img{
+box-shadow: none;
+height: 60%;
+
+} 
+#GOto{
+    color: black;
+        background-color: bisque;
+        height: 70px;
+        border-radius: 7px;
+        font-size: 16px;
+    font-weight: 400;
+text-align:center;
+box-sizing: border-box;
+margin-left: 1160px;
+width: 150px;
+cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color:black
+}
+
+
+</style>
+</head>
+<body>
+    <div id="naVbar">
+        <div>
+            <img src="https://shop.indiamart.com/style/im_logo.jpg">
+            <div><h2>Shopping</h2></div>
+        </div>
+        <div>
+            <form id="form">
+               
+                <span class="unit">Shop<div class= "vertical"></div></span>
+                <input type="text" placeholder="What are you looking for?">
+                
+                <button type="submit">Search</button>
+               
+              </form>
+        </div>
+        
+        <div id="last">
+            <p>Post Bulk Requirement...(For large quantities)</p>
+             </div>
+    </div>
+ <div id="wears">
+<div>
+    <div class="round"><img src="https://shop.indiamart.com/style/ladies-wear.png"></div>
+    
+    <p>Ladies Wear</p>
+</div>
+
+<div>
+    <div class="round"><img src="https://shop.indiamart.com/style/men-wear.png"></div>
+    
+    <p>Men Wear</p>
+</div>
+
+<div>
+    <div class="round"><img src="https://shop.indiamart.com/style/footwear.png"></div>
+    
+    <p>Footwear</p>
+</div>
+
+<div>
+    <div class="round"><img src="https://shop.indiamart.com/style/cosmetics.png"></div>
+
+    <p>Cosmetics</p>
+</div>
+
+<div>
+    <div class="round"><img src="https://shop.indiamart.com/style/mobile-accessories.png"></div>
+    
+    <p>Mobile Accessories</p>
+</div>
+
+<div>
+    <div class="round"><img src="https://shop.indiamart.com/style/home-decor.png"></div>
+   
+    <p>Home Decor</p>
+</div>
+
+<div>
+    <div class="round"> <img src="https://shop.indiamart.com/style/artificial-jewellery.png"></div>
+   
+    <p>Artificial Jewellery</p>
+</div>
+
+<div>
+    <div class="round"><img src="https://shop.indiamart.com/style/fertilizer.png"></div>
+    
+    <p>Fertilizer</p>
+</div>
+
+<div>
+    <div class="round"><img src="https://shop.indiamart.com/style/light.png"></div>
+  
+    <p>Light</p>
+</div>
+
+<div>
+    <div class="round"><img src="https://shop.indiamart.com/style/industrial-chemicals.png"></div>
+    
+    <p>Industrial Chemicals</p>
+</div>
+ </div>
+<div id="Picles">
+<img src="image.png" height="400px" width="100%"/>
+
+</div>
+<button id="GOto"><a href="cart.html">Go To cart</a></button>
+<div class="uparka">
+<div class="Logowala">
+    <img src="https://shop.indiamart.com/style/ladies-wear.png"/>
+</div>
+<div class="likhnewala">
+    <h2>Ladies Wear</h2>
+</div>
+</div>
+<div id="sabhipicshai">
+ <div>
+    <div class="onlyimage">
+        <img src="https://5.imimg.com/data5/ECOM/Default/2022/2/MR/MU/AO/1016518/btswhitewomen-500x500.jpg">
+    </div>
+    
+    <p>BTS Printed ALL Cotton T-shirts</p>
+    <p>Dorex knitwears</p>
+    <h4>Rs 399</h4>
+    <button class="addme">Add to Cart</button>
+ </div>
+ <div>
+    <div class="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/6/JZ/QK/YT/90086993/shdrs10231-1-500x500.jpg"></div>
+   
+    <p>Mustard Foil Print Gathered Dress</p>
+    <p>NOZ2TOZ</p>
+    <h4>₹ 1,035</h4>
+    <button class="addme">Add to Cart</button>
+ </div>
+ <div>
+    <div class="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/2/IA/CK/XQ/5444595/4-07a0cea3-4c6e-41c1-9ad5-f0bc22708fe0-500x500.jpg"></div>
+    
+    <p>Beige Solid Kurta</p>
+    <p>Guniaa</p>
+    <h4>₹ 1,099</h4>
+    <button class="addme">Add to Cart</button>
+ </div>
+ <div>
+    <div class="onlyimage"> <img src="https://5.imimg.com/data5/ECOM/Default/2022/3/OC/OC/TQ/20345987/whatsappimage2021-12-13at6-25-16pm-3-500x500.jpg"></div>
+   
+    <p>Anarkali Dress R626</p>
+    <p>Wama Trendz</p>
+    <h4>₹ 1,999</h4>
+    <button class="addme">Add to Cart</button>
+ </div>
+ <div>
+    <div class="onlyimage"> <img src="https://5.imimg.com/data5/ECOM/Default/2022/6/WB/NC/UF/88399644/red-cf9aca72-2ad3-4700-8691-23ac0d804eb2-500x500.jpg"></div>
+   
+    <p>Biker-9 Printed T-shirt</p>
+    <p> Yazhi Apparel</p>
+    <h4> ₹ 399</h4>
+    <button class="addme">Add to Cart</button>
+ </div>
+ <div>
+    <div class="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/3/EH/FH/ND/14133958/anr-dia-06a-caf3efd1-0ade-4996-a253-1dea00cd374e-500x500.jpg"></div>
+   
+    <p>Chikan Anarakali with Pattern Border</p>
+    <p>Sahej Suits</p>
+    <h4>₹ 1,299</h4>
+    <button class="addme">Add to Cart</button>
+ </div>
+ <div>
+    <div class="onlyimage"> <img src="https://5.imimg.com/data5/ECOM/Default/2022/4/FX/TO/KS/89757443/28-500x500.jpg"></div>
+   
+    <p> Ritsila Women's Fit And Flare Fancy Girls Cardin Dress</p>
+    <p>Vool Fashion</p>
+    <h4>₹ 899</h4>
+    <button class="addme">Add to Cart</button>
+ </div>
+ <div>
+    <div class="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/3/BB/NF/GY/10883763/1-12666685-fccd-4648-8af1-616d34c0a41e-500x500.jpg"></div>
+   
+    <p>Women Red Self Design Round Neck T-shirt</p>
+    <p>   AKR Industries Private Limited</p>
+    <h4> ₹ 325</h4>
+    <button class="addme">Add to Cart</button>
+ </div>
+  </div>
+<button>View More</button>
+
+
+
+<div class="uparka">
+    <div class="Logowala">
+        <img src="https://shop.indiamart.com/style/men-wear.png"/>
+    </div>
+    <div class="likhnewala">
+        <h2>Mens Wear</h2>
+    </div>
+    </div>
+<div id="flexwalipics">
+   <div>
+    <div class ="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/1/DY/BD/VS/33805497/img-5027-500x500.jpg"></div>
+        <p>Stiya Cotton Unisex Polo Good Tshirts</p>
+        <p>Prak Overseas</p>
+        <h4>₹ 449</h4>
+        <button class="addme">Add to Cart</button>
+   </div>
+   <div>
+    <div class ="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/3/UE/WG/DN/88399644/adobe-post-20211206-2117260-09828441777340546-500x500.png"></div>
+    <p>Yazhi Men's Premium Cotton Polo Shirt - Navy Blue </p>
+    <p> Yazhi Apparel</p>
+    <h4> ₹ 349</h4>
+    <button class="addme">Add to Cart</button>
+   </div>
+   <div>
+    <div class ="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/3/ZX/TH/WK/10883763/1-4b978e69-08e6-4930-b542-522a0ee4649b-500x500.jpg"></div>
+    <p>Kids Red & Black Colourblock Cotton T Shirt</p>
+    <p>AKR Industries Private Limited</p>
+    <h4>₹ 217</h4>
+    <button class="addme">Add to Cart</button>
+   </div>
+   <div>
+    <div class ="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/5/IO/FO/TO/52782818/styleno-6032-black-500x500.png"></div>
+    <p>Sportz Fit Mens Half Sleeve Round Neck Sports, Casual T Shirt </p>
+    <p> Cowboy Stores</p>
+    <h4>₹ 199</h4>
+    <button class="addme">Add to Cart</button>
+   </div>
+   <div>
+    <div class ="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/2/HX/ET/JQ/5444595/6-ad08fa33-193a-4aa4-9678-542080625048-500x500.jpg"></div>
+    <p>Dark Grey Checkered Cotton Shirt</p>
+    <p>Guniaa</p>
+    <h4>₹ 799</h4>
+    <button class="addme">Add to Cart</button>
+   </div>
+</div>
+<button>View More</button>
+
+
+
+
+
+
+<div class="uparka">
+    <div class="Logowala">
+        <img src="https://shop.indiamart.com/style/footwear.png"/>
+    </div>
+    <div class="likhnewala">
+        <h2>Footwear</h2>
+    </div>
+    </div>
+    <div id="sabhipicshai">
+     <div>
+        <div class="onlyimage">
+            <img src="https://5.imimg.com/data5/ECOM/Default/2022/4/OF/BQ/MY/33805497/img-1891-500x500.jpg">
+        </div>
+        
+        <p>Hautton Men's Stylish Light-weight Breathable Casual</p>
+        <p>Prak Overseas</p>
+        <h4>₹  1349</h4>
+        <button class="addme">Add to Cart</button>
+     </div>
+     <div>
+        <div class="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/6/IE/KC/TT/130955569/1622905524460-41fzulhz-nl-originnm80prcnt-500x500.jpg"></div>
+       
+        <p> Trendy Synthetic Sneaker For Men</p>
+        <p>Booshop.In</p>
+        <h4>₹ 629</h4>
+        <button class="addme">Add to Cart</button>
+     </div>
+     <div>
+        <div class="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/6/HX/SY/OX/51228023/f4-500x500.jpg"></div>
+        
+        <p>Stylish Mens Black And White Sneaker Sneakers For Men (black, White)</p>
+        <p>Zaptoe</p>
+        <h4>₹ 349</h4>
+        <button class="addme">Add to Cart</button>
+     </div>
+     <div>
+        <div class="onlyimage"> <img src="https://5.imimg.com/data5/ECOM/Default/2022/3/ZA/EC/BZ/148627789/img-9774-500x500.jpg"></div>
+       
+        <p>Women Pink Printed Open Toe Heels</p>
+        <p>Safa Ventures Private Limited</p>
+        <h4>₹ 549</h4>
+        <button class="addme">Add to Cart</button>
+     </div>
+     <div>
+        <div class="onlyimage"> <img src="https://5.imimg.com/data5/ECOM/Default/2022/5/IW/UL/ME/11568066/lb10-500x500.jpg"></div>
+       
+        <p>Love Bride Slippers For Gifting</p>
+        <p> United Brothers</p>
+        <h4> ₹ 219</h4>
+        <button class="addme">Add to Cart</button>
+     </div>
+     <div>
+        <div class="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/4/OU/EY/QE/49405442/80919d2a-3a54-44cf-b87e-166004c8aba5-500x500.jpg"></div>
+       
+        <p>Mr.shoes New Imported Autumn High Quality Ankle Elasticity</p>
+        <p>Mr. Shoes</p>
+        <h4>₹ 1,999</h4>
+        <button class="addme">Add to Cart</button>
+     </div>
+     <div>
+        <div class="onlyimage"> <img src="https://5.imimg.com/data5/ECOM/Default/2022/6/FF/KV/NN/49131531/image-8154ae1a-ac29-4976-ba4a-214b03272dd5-500x500.jpg"></div>
+       
+        <p> Men Black Sneakers</p>
+        <p>M/S Mathon'S</p>
+        <h4>₹ 1,299</h4>
+        <button class="addme">Add to Cart</button>
+     </div>
+     <div>
+        <div class="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/6/WN/JP/FF/4120003/1622905547444-61kysod-qil-ul1168-originnm80prcnt-500x500.jpg"></div>
+       
+        <p>Trendy Synthetic Sneaker</p>
+        <p>   Ramshiv Exports</p>
+        <h4> ₹ 735</h4>
+        <button class="addme">Add to Cart</button>
+     </div>
+      </div>
+      <button>View More</button>
+    
+    
+    
+    
+    
+    
+    
+      <div class="uparka">
+        <div class="Logowala">
+            <img src="https://shop.indiamart.com/style/cosmetics.png"/>
+        </div>
+        <div class="likhnewala">
+            <h2>Cosmetics</h2>
+        </div>
+        </div>
+    <div id="flexwalipics">
+       <div>
+        <div class ="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/4/HK/KX/GX/594443/1643304018-95-ma-live-men-light-fs-psp-00b-0821-3d-l-500x500.png"></div>
+            <p>Schwarzkopf Live Ice Blonde Hair Colour</p>
+            <p>3G Chemist</p>
+            <h4>₹ 1250</h4>
+            <button class="addme">Add to Cart</button>
+       </div>
+       <div>
+        <div class ="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/5/LU/YA/SV/12757498/sblhaircolodarkbrown-500x500.jpg"></div>
+        <p>Sbl Hair Color Dark Brown For unisex </p>
+        <p>Yourmedkart</p>
+        <h4> ₹ 38</h4>
+        <button class="addme">Add to Cart</button>
+       </div>
+       <div>
+        <div class ="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/3/WF/FT/DQ/1948208/blonde-500x500.png"></div>
+        <p>Organic Herbal Hair Color Blonde</p>
+        <p>Cultivator Natural Products</p>
+        <h4>₹ 640</h4>
+        <button class="addme">Add to Cart</button>
+       </div>
+       <div>
+        <div class ="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/3/JU/MF/AE/7304076/colourveda-natural-hair-colour-100-gm-blackish-brown-1-500x500.png"></div>
+        <p>Shahnaz Husain Colourveda Natural Hair </p>
+        <p> Green Leaf</p>
+        <h4>₹ 160</h4>
+        <button class="addme">Add to Cart</button>
+       </div>
+       <div>
+        <div class ="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/6/EA/CR/AE/9422220/ur-sugar-15ml-thermal-quick-building-uv-gel-acrylic-poly-extension-gel-nail-tips-uv-builder-jpg-640x640-5b63918b-ed35-4ac9-8304-45c94058d76f-500x500.jpg"></div>
+        <p>15ml Thermal Quick Building Uv Gel Acrylic</p>
+        <p>My Online Collection Store</p>
+        <h4>₹ 1,299</h4>
+        <button class="addme">Add to Cart</button>
+       </div>
+    </div>
+    <button>View More</button>
+   
+   
+   
+   
+   
+    <div class="uparka">
+        <div class="Logowala">
+            <img src="https://shop.indiamart.com/style/mobile-accessories.png"/>
+        </div>
+        <div class="likhnewala">
+            <h2>Mobile Accessories</h2>
+        </div>
+        </div>
+        <div id="sabhipicshai">
+         <div>
+            <div class="onlyimage">
+                <img src="https://5.imimg.com/data5/ECOM/Default/2022/2/ZT/TZ/BY/29087327/yubingo-charming-lady-with-tiger-cool-phone-cover-for-asus-zenfone-3-max-zc520tl-u0196-500x500.jpg">
+            </div>
+            
+            <p>Charming Lady with Tiger Back Cover for Asus Zenfone 3 Max ZC520TL </p>
+            <p>Yubingo Creations Private Limited</p>
+            <h4>₹ 149</h4>
+            <button class="addme">Add to Cart</button>
+         </div>
+         <div>
+            <div class="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/6/XV/LP/JA/134041916/pocox2-bk-pur-500x500.jpg"></div>
+           
+            <p>Simple Pink Color Back Panel Cover For Poco X2 xc</p>
+            <p>  Rd Mobiles Solutions Private Limited</p>
+            <h4> ₹ 150</h4>
+            <button class="addme">Add to Cart</button>
+         </div>
+         <div>
+            <div class="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/5/GL/NF/RM/86538515/appleiphonecase12pro-emg-32e95a7f-4d7a-411c-8042-d562ca3786d2-500x500.jpg"></div>
+            
+            <p>Soft Silicone Transparent Printed Case Compatible With Iphone 12 Pro-emg Cloud </p>
+            <p>   Best Cell Technology Llp</p>
+            <h4>₹ 399</h4>
+            <button class="addme">Add to Cart</button>
+         </div>
+         <div>
+            <div class="onlyimage"> <img src="https://5.imimg.com/data5/ECOM/Default/2022/6/WU/QK/SE/79925698/appleiphone7plus1611-510x737-500x500.webp"></div>
+           
+            <p>Bt21 Iphone 7 Plus Back Cover </p>
+            <p> Badthameez Fashions</p>
+            <h4>₹ 249</h4>
+            <button class="addme">Add to Cart</button>
+         </div>
+         <div>
+            <div class="onlyimage"> <img src="https://5.imimg.com/data5/ECOM/Default/2022/3/IJ/LY/OY/128584534/appleiphonesesiliconecase-pinksand-mxyk2zm-a-quicktech1-500x500.jpg"></div>
+           
+            <p>Apple iPhone SE Silicone Case | Pink Sand | MXYK2ZM/A
+
+               
+                
+               </p>
+            <p>  Quicktech</p>
+            <h4>  ₹ 1,299</h4>
+            <button class="addme">Add to Cart</button>
+         </div>
+         <div>
+            <div class="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/5/JG/RC/UW/152527331/mutural-flip-series-kickstand-case-for-ipad-pro-11-inch-2021-mutural-1638265686-500x500.jpg"></div>
+           
+            <p>Mutural Flip Series kickstand case for iPad Pro 11 inch (2021)</p>
+            <p> Vinod Enterprise</p>
+            <h4>₹ 2,499</h4>
+            <button class="addme">Add to Cart</button>
+         </div>
+         <div>
+            <div class="onlyimage"> <img src="https://5.imimg.com/data5/ECOM/Default/2022/6/XO/YI/CI/109174743/dealsplant-cases-covers-glase-pro-by-uniq-for-iphone6-plus-6s-plus-360-full-protection-ultra-clearcase-11297156300875-500x500.jpg"></div>
+           
+            <p> Glase Pro By Uniq For IPhone6 Plus &6s Plus 360 Full Protection Ultra ClearCase</p>
+            <p>      Solai Traders</p>
+            <h4>₹ 699</h4>
+            <button class="addme">Add to Cart</button>
+         </div>
+         <div>
+            <div class="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/6/HE/RC/UD/76923980/ip-mb-cc-109black-4ba5b2f7-939a-40f7-beb2-151d89a9e559-500x500.jpg"></div>
+           
+            <p>Indian Petals Polycarbonate 3d Pattern Protective Mobile Back Case Cover For Apple Iphone 5</p>
+            <p>   Indian Petals</p>
+            <h4> ₹ 430</h4>
+            <button class="addme">Add to Cart</button>
+         </div>
+           </div>
+        
+        
+        
+        
+        
+           <button>View More</button>
+        <div class="uparka">
+            <div class="Logowala">
+                <img src="https://shop.indiamart.com/style/home-decor.png"/>
+            </div>
+            <div class="likhnewala">
+                <h2>Home Decor</h2>
+            </div>
+            </div>
+        <div id="flexwalipics">
+           <div>
+            <div class ="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/6/TX/OB/RE/26866112/remini20220113202559997-500x500.jpg"></div>
+            <p>Raymond Royal King 100% Cotton Bedsheet</p>
+            <p>Vaibhavs Creations</p>
+            <h4>₹ 2,099</h4>
+          
+                <button class="addme">Add to Cart</button>
+           </div>
+           
+               
+                
+           <div>
+            <div class ="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/6/LZ/TQ/AJ/85504720/dsc-0405-500x500.jpg"></div>
+            <p>Multi Color Geometrical Print Viscose Print </p>
+            <p>Game Changers Texfab PVT</p>
+          <h4>₹ 599</h4>
+            <button class="addme">Add to Cart</button>
+           </div>
+           <div>
+            <div class ="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/2/CQ/RM/ZD/145144158/08-01-1-864db134-8629-4348-97f9-abc7d5c39355-500x500.jpg"></div>
+            <p>Jaipuri Printed  Cotton Bedsheet 300 Cotton king Size Bedsheet  </p>
+            <p> Jaipur Prints</p>
+            <h4> ₹ 1,099</h4>
+            
+            <button class="addme">Add to Cart</button>
+           </div>
+           <div>
+            <div class ="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/6/RI/WM/JQ/2403926/zuhdyy7yna-500x500.jpg"></div>
+            <p>Rajasthani Jaipuri Graceful Cotton Block Print Bed Sheets</p>
+            <p> Cowboy Stores</p>
+            <h4> ₹ 1,099</h4>
+            <button class="addme">Add to Cart</button>
+           </div>
+           <div>
+            <div class ="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/5/HT/TD/OS/21164203/201-2-500x500.jpg"></div>
+            <p>Printed Floral Cotton 250 Tc Duvet Cover - Orange</p>
+            <p> Aurave Decor Private Limited</p>
+            <h4>₹ 1319</h4>
+            <button class="addme">Add to Cart</button>
+           </div>
+        </div>
+<button>View More</button>
+
+
+
+
+        <div class="uparka">
+            <div class="Logowala">
+                <img src="https://shop.indiamart.com/style/artificial-jewellery.png"/>
+            </div>
+            <div class="likhnewala">
+                <h2>Artificial Jewellery</h2>
+            </div>
+            </div>
+            <div id="sabhipicshai">
+             <div>
+                <div class="onlyimage">
+                    <img src="https://5.imimg.com/data5/ECOM/Default/2022/6/WF/IR/FE/4043054/dsc-0434-500x500.jpg">
+                </div>
+                 <p>Evil Eye Enamel Charms Pendants | Size 18mm (w) </p>
+                <p>    Satra Traders, Mumbai</p>
+                <h4>₹ 120</h4>
+                <button class="addme">Add to Cart</button>
+             </div>
+             <div>
+                <div class="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/5/JJ/XK/NI/10488547/1128-05-708130-main-500x500.jpg"></div>
+               
+                <p>Peluche Ravishing Purple Brooch For Men </p>
+                <p>   Peluche Inc.</p>
+                <h4> ₹ 349</h4>
+                <button class="addme">Add to Cart</button>
+             </div>
+             <div>
+                <div class="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/3/TH/OK/GY/9504011/img-20220215-150449-500x500.jpg"></div>
+                
+                <p>Sajwada Meenakari Kundan Brooch </p>
+                <p> Sun City Beads</p>
+                <h4>₹ 187</h4>
+                <button class="addme">Add to Cart</button>
+             </div>
+             <div>
+                <div class="onlyimage"> <img src="https://5.imimg.com/data5/ECOM/Default/2022/5/OM/GW/DI/11568066/tg13-500x500.jpg"></div>
+               
+                <p>Team Groom Home Slippers </p>
+                <p> United Brothers</p>
+                <h4> ₹ 219</h4>
+                <button class="addme">Add to Cart</button>
+             </div>
+             <div>
+                <div class="onlyimage"> <img src="https://5.imimg.com/data5/ECOM/Default/2022/5/ZC/BK/ZA/77950844/zevar-jewelry-small-size-ahmdabadi-nose-pin-36695928406249-500x500.jpg"></div>
+               
+                <p>Small Size Ahmdabadi Nose Pin </p>
+                <p>    Ezevar Private Limited</p>
+                <h4> ₹ 950</h4>
+                <button class="addme">Add to Cart</button>
+             </div>
+             <div>
+                <div class="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/2/TS/DS/LG/21683396/rrj1414-pure-925-silver-evil-eye-watch-charm-500x500.jpg"></div>
+               
+                <p>Flower Evil Eye Watch Charm </p>
+                <p>  Rishi Hrithjieela Jain</p>
+                <h4> ₹ 1,899</h4>
+                <button class="addme">Add to Cart</button>
+             </div>
+             <div>
+                <div class="onlyimage"> <img src="https://5.imimg.com/data5/ECOM/Default/2022/5/YA/KQ/JV/29654777/rsz-dsc8065-500x500.jpg"></div>
+               
+                <p> Kaisori Silver Nosepin - Swastika </p>
+                <p>    Kaisori</p>
+                <h4> ₹ 600</h4>
+                <button class="addme">Add to Cart</button>
+             </div>
+             <div>
+                <div class="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/3/NA/NN/ES/80078223/17-0c5e14a4-c0ea-4e54-ac52-d6be42cc6f6f-500x500.png"></div>
+               
+                <p>Magnificent Evil Eye Rattan and Cane Mirror</p>
+                <p>   AKR Industries Private Limited</p>
+                <h4> ₹ 4,200</h4>
+                <button class="addme">Add to Cart</button>
+             </div>
+               </div>
+            <button>View More</button>
+            
+            
+            
+            
+            
+            
+            <div class="uparka">
+                <div class="Logowala">
+                    <img src="https://shop.indiamart.com/style/fertilizer.png"/>
+                </div>
+                <div class="likhnewala">
+                    <h2>Fertilizer</h2>
+                </div>
+                </div>
+            <div id="flexwalipics">
+               <div>
+                <div class ="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/4/NO/TL/AF/121700981/500gmpack-500x500.png"></div>
+                    <p>Purity Nursery Organic Potassium Essential Fertilizer </p>
+                    <p>   Sahem International</p>
+                    <h4>₹ 599</h4>
+                    <button class="addme">Add to Cart</button>
+               </div>
+               <div>
+                <div class ="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/5/LK/PE/KV/1948208/immuincrease-500x500.jpg"></div>
+                <p>Organic Immuincrease</p>
+                <p>    Cultivator Natural Products Private Limited</p>
+                <h4> ₹ 350</h4>
+                <button class="addme">Add to Cart</button>
+               </div>
+               <div>
+                <div class ="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/5/DH/GZ/FH/12142841/09a891983f80a1fb08f255b6f5a1a054-500x500.jpg"></div>
+                <p>Aquario Neo Compact Normal Soil For Plants, 8l </p>
+                <p> Petzlife World</p>
+                <h4> ₹ 2,399</h4>
+                <button class="addme">Add to Cart</button>
+               </div>
+               <div>
+                <div class ="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/5/PM/GM/DQ/140157941/nanobloom-500x500.jpg"></div>
+                <p>Geolife Nanomeal Bloom (for Pre-flowering Stage) </p>
+                <p> Geolife Agritech India Private Limited</p>
+                <h4> ₹ 241</h4>
+                <button class="addme">Add to Cart</button>
+               </div>
+               <div>
+                <div class ="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/5/MF/ZA/WK/149182841/1-8251eab0-40d5-4fd0-b6ac-f64c00c26f6c-500x500.jpg"></div>
+                <p>Gliricidia Sepium Seeds For Animal  Seeds & Green Manure</p>
+                <p>    Sri Sai Forestry</p>
+                <h4>₹455</h4>
+                <button class="addme">Add to Cart</button>
+               </div>
+            </div>
+            <button>View More</button>
+
+
+
+            <div class="uparka">
+                <div class="Logowala">
+                    <img src="https://shop.indiamart.com/style/light.png"/>
+                </div>
+                <div class="likhnewala">
+                    <h2>Light</h2>
+                </div>
+                </div>
+                <div id="sabhipicshai">
+                 <div>
+                    <div class="onlyimage">
+                        <img src="https://5.imimg.com/data5/ECOM/Default/2022/5/QL/NF/VJ/3057075/sky-blue-afraid-of-nothing-led-neon-quotes-afraid-of-nothing-custom-neon-led-sign-for-sale-by-zestaneon-zesta-neon-29336697176240-500x500.jpg">
+                    </div>
+                    
+                    <p>Wings Neon Sign Night Light For Decor Bedroom Room Bar </p> 
+                    <p> R S Laminates</p>
+                    <h4> ₹ 1,999</h4>
+                    <button class="addme">Add to Cart</button>
+                 </div>
+                 <div>
+                    <div class="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/6/ND/JJ/HL/15265943/61ycq6qvkrl-sx522-8acc1aac-2843-45c0-ab61-3ef19216cef0-500x500.jpg"></div>
+                   
+                    <p>150 Watt Led Flood Light White Focus Grey Body Back Chock For Outdoor Purposes</p>
+                    <p>D'Mak Energia Private Limited</p>
+                    <h4>₹ 3,450</h4>
+                    <button class="addme">Add to Cart</button>
+                 </div>
+                 <div>
+                    <div class="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/5/QJ/HZ/YB/41588756/good-vibes-neon-led-48-inch-x-12-lights-639-500x500.jpg"></div>
+                    
+                    <p>Automatic Street Light</p>
+                    <p> M/s Labsguru Technologies Private Limited</p>
+                    <h4>₹ 149</h4>
+                    <button class="addme">Add to Cart</button>
+                 </div>
+                 <div>
+                    <div class="onlyimage"> <img src="https://5.imimg.com/data5/ECOM/Default/2022/6/WV/EU/AX/41588756/wings-neon-led-30-inch-x-42-pink-lights-207-500x500.jpg"></div>
+                   
+                    <p>"wings" Neon Led - 30 Inch X 42 Inch ₹ 9,190 </p>
+                    <p>    Nikhil Jain</p>
+                    <h4> ₹ 7,790</h4>
+                    <button class="addme">Add to Cart</button>
+                 </div>
+                 <div>
+                    <div class="onlyimage"> <img src="https://5.imimg.com/data5/ECOM/Default/2022/6/EQ/HT/VY/140588857/untitleddesign-32-500x500.png"></div>
+                   
+                    <p>Hardoll Solar Pillar Lights For Outdoor Home Garden Waterproof Wall Gate Post Lamp (round Shape)</p>
+                    <p>  Hardoll Enterprises LLP</p>
+                    <h4>  ₹ 4,560</h4>
+                    <button class="addme">Add to Cart</button>
+                 </div>
+                 <div>
+                    <div class="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/1/JB/YY/ZM/2755789/automatic-street-light-project-500x500.jpg"></div>
+                   
+                    <p>Conquer Together LED Neon Quotes </p>
+                    <p>  Ace In Life</p>
+                    <h4>₹ 3,799</h4>
+                    <button class="addme">Add to Cart</button>
+                 </div>
+                 <div>
+                    <div class="onlyimage"> <img src="https://5.imimg.com/data5/ECOM/Default/2022/3/PZ/BO/VN/147282547/img-main-500x500.jpg"></div>
+                   
+                    <p> Ascorp 30 Watt Automatic Led Street Light 4200 Lumens</p>
+                    <p>  Asnkart Global Solutions LLP </p>
+                    <h4> ₹ 4,000</h4>
+                    <button class="addme">Add to Cart</button>
+                 </div>
+                 <div>
+                    <div class="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/4/SZ/WB/IC/7096823/200w-cfed3d33-c5d0-4b53-9cb5-21497acad7c1-500x500.jpg"></div>
+                   
+                    <p>200w Led Flood Light Waterproof Protection (slim-white) </p>
+                    <p>ViViD LED Products</p>
+                    <h4>₹ 9,680</h4>
+                    <button class="addme">Add to Cart</button>
+                 </div>
+                   </div>
+                <button>View More</button>
+                
+                
+                
+                
+                
+                
+                <div class="uparka">
+                    <div class="Logowala">
+                        <img src="https://shop.indiamart.com/style/industrial-chemicals.png"/>
+                    </div>
+                    <div class="likhnewala">
+                        <h2>Industrial Chemicals</h2>
+                    </div>
+                    </div>
+                <div id="flexwalipics">
+                   <div>
+                    <div class ="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/6/WS/IB/ND/693643/screenshot-2021-03-19-12-41-14-11-2-500x500.jpg"></div>
+                        <p>Vegetable Glycerine 99.5%</p>
+                        <p>  Ases Chemical Works</p>
+                        <h4> ₹ 170</h4>
+                        <button class="addme">Add to Cart</button>
+                   </div>
+                  
+                   <div>
+                    <div class ="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/5/XR/SI/MD/11739820/glycerin-ichthammol-500x500.jpg"></div>
+                    <p>Glycerin Ichthammol </p>
+                    <p> Agrawal Drugs Private Limited</p>
+                    <h4> ₹ 790</h4>
+                    <button class="addme">Add to Cart</button>
+                   </div>
+                   <div>
+                    <div class ="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/2/ER/ZC/LS/80634884/dsc-3586ab-500x500.jpg"></div>
+                    <p>Glycerine 50ml</p>
+                    <p>Sansu Health Care</p>
+                    <h4> ₹ 55</h4>
+                    <button class="addme">Add to Cart</button>
+                   </div>
+                   <div>
+                    <div class ="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/3/OL/RC/TV/57516115/serummainpiccopy-500x500.jpg"></div>
+                    <p>Radiant Vitamin C Face serum </p>
+                    <p> Shaakuntalam Beauty</p>
+                    <h4>₹ 599</h4>
+                    <button class="addme">Add to Cart</button>
+                   </div>
+                   <div>
+                    <div class ="onlyimage"><img src="https://5.imimg.com/data5/ECOM/Default/2022/3/LX/YD/UR/32652151/vg200f-500x500.jpg"></div>
+                    <p>Carmine Edible Vegetable</p>
+                    <p>Carmine County </p>
+                    <h4>₹ 79</h4>
+                    <button class="addme">Add to Cart</button>
+                   </div>
+                </div>
+                <button>View More</button>
+</body>
+<script>
+var addit=document.querySelectorAll(".addme")
+var cartData=JSON.parse(localStorage.getItem("cart")) || []
+for(var i=0;i<addit.length;i++){
+    addit[i].addEventListener("click", hitme)
+}
+function hitme(){
+    var data ={
+     photo:document.querySelector(".onlyimage"),
+     naam:document.querySelectorAll(".onlyimage+p"),
+     company:document.querySelectorAll("p+p"),
+     price:document.querySelectorAll("p+h4")
+    
+    };
+    
+    cartData.push(data);
+    
+    localStorage.setItem("cart",JSON.stringify(cartData))
+    alert("Item Added to Cart")
+    console.log(cartData)
+    
+
+   }
+    
+
+
+
+
+</script>
+</html>

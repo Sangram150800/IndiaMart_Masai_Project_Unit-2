@@ -1072,8 +1072,8 @@ a{
                 <button><a href="Frontend.html">Back</a></button>
 </body>
 <script>
-var addit=document.querySelectorAll(".addme")
-var cartData=JSON.parse(localStorage.getItem("cart")) || []
+var addit=document.querySelectorAll(".addme");
+var cartData=JSON.parse(localStorage.getItem("cart")) || [];
 for(var i=0;i<addit.length;i++){
     addit[i].addEventListener("click", hitme)
 }
@@ -1090,7 +1090,7 @@ function hitme(){
     
     localStorage.setItem("cart",JSON.stringify(cartData))
     alert("Item Added to Cart")
-    console.log(cartData)
+    //console.log(cartData)
     
 
    }

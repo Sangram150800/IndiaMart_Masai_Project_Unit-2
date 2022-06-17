@@ -552,6 +552,15 @@ body {
     bottom: 74px;
     font-family: arial;
 }
+#start2{
+    width: 1200px;
+    height: auto;
+}
+#start2>img{
+    width: 90%;
+    margin-left: 50px;
+}
+
 
 
 
@@ -709,6 +718,8 @@ body {
     height: 500px;
     margin: auto;
     display: flex;
+    background-color: white;
+    
 }
 
 #relprobox>div {
@@ -719,6 +730,7 @@ body {
     text-align: center;
     line-height: 9px;
     font-family: sans-serif;
+  
 
 }
 
@@ -728,6 +740,7 @@ body {
     border: 1px solid rgb(239, 239, 239);
     margin: auto;
     margin-top: 16px;
+
 }
 
 #relprobox>div>div>img {
@@ -745,6 +758,7 @@ body {
 
 .ptwo {
     font-size: 17px;
+   
 }
 
 .pthree {
@@ -881,10 +895,12 @@ hr {
     font-weight: bold;
     font-size: 18px;
     text-decoration: none;
+    background-color: white;
 }
 
 #main>div>h2>a {
     color: #2D3192;
+    background-color: white;
     text-decoration: none;
 }
 
@@ -1298,7 +1314,7 @@ h3 {
     display: flex;
     height: auto;
     box-sizing: border-box;
-    height: auto;
+  margin-top: 300px;
 }
 
 .folow>img {
@@ -1359,7 +1375,7 @@ h3 {
     width: 1300px;
 
     background-color: white;
-    margin: auto;
+
 
 }
 
@@ -1479,6 +1495,7 @@ ul {
         font-size: 14px;
         color: #2e3192;
         text-decoration: none;
+        background-color: white;
     }
 
     #boxv>div>a+p {

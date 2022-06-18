@@ -10,10 +10,12 @@
         width: 1000px;
         height:auto;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-       display: flex;
+       display: grid;
+       grid-template-columns: repeat(4,1fr);
+       grid-template-rows: repeat(6,300px);
        margin-left: 40px;
        margin-top: 100px;
-       background-color: rgb(239, 212, 195)
+       background-color: rgb(228, 220, 214)
     }
     #dnavbar {
     width: 100%;
@@ -73,10 +75,11 @@ a{
 }
 #wholebox{
     display: flex;
+    margin-top: -40px;
 }
 #totalpage{
     border: 1px solid gray;
-    height:700px;
+    height:750px;
     width: 300px;
     margin-top: 100px;
     background-color: rgb(218, 234, 236);
@@ -134,6 +137,19 @@ margin-top: 10px;
     margin: 6px;
 
 }
+.remove{
+    background-color: red;
+    color: white;
+height: 30px;
+width: 80px;
+border-radius: 5px;
+border: none;   
+}
+#submit+h4{
+    text-align: center;
+    font-style: italic;
+}
+
 
     
 
@@ -161,14 +177,15 @@ margin-top: 10px;
             <h2>Order Details</h2>
             <div class="line"><span></span></div>
            <div>
-            <h4>No.of products</h4>
+            <h4>No.of products</h4><h4 id="Nummber"></h4>
         </div>
            <div>
-            <h4>Total price</h4>
+            <h4>Total price</h4><h4 id="Total"></h4>
            </div>
         <form>
             <input type="text"placeholder="Enter Coupon Code" id="coupon">
             <input type="submit" id="submit" value="Apply Coupon" >
+        <h4>Use Masai@30 for  30%discount</h4>
         </form>
         <h2>
             Shipping Details
@@ -194,8 +211,22 @@ margin-top: 10px;
 </body>
 </html>
 <script>
+  //  var total=datafromprod.reduce(function(sum,elem,index,arr){
+    //    return sum + Number(elem.price)
+   // },0)
+    
     var datafromprod=JSON.parse(localStorage.getItem("cart"))
-   datafromprod.map(function(elem){
+  var length=datafromprod.length;
+ // var free=document.querySelector("#coupon")
+ // if(free.innerText ="masai@30")
+ // {
+  //  total =(total*70/100)
+ // }
+  document.querySelector("#Nummber").innerText=length;
+ // document.querySelector("#Total").innerText=total;
+  
+  
+    datafromprod.map(function(elem){
     var LOL=document.createElement("div")
     LOL.getAttribute("class","bean")
     
@@ -210,10 +241,23 @@ margin-top: 10px;
     
     var daam=document.createElement("h4")
     daam.innerText=elem.price
+     
+    var flop=document.createElement("button")
+    flop.innerText="Remove"
+    flop.setAttribute("class","remove")
+    flop.addEventListener("click",function(){
+        callme(elem)
+    })
     
-    LOL.append(pic,Name,COmp,daam)
+    LOL.append(pic,Name,COmp,daam,flop)
     document.querySelector("#Humhaidon").append(LOL)
 
    })
+  function callme(elem,index){
+    datafromprod.splice(index,1)
+   localStorage.setItem("cart",JSON.stringify(datafromprod))
+    window.location.reload()
+  
+  }
 
 </script>

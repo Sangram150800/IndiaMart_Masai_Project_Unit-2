@@ -1,0 +1,87 @@
+#section__1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    background-color: #F5F8FA;
+    padding: 20px 0 20px 0;
+}
+
+#section__1 > div {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid white;
+    background-color: white;
+    padding: 0px 20px;
+    font-family: sans-serif;
+}
+
+#section__1  div:hover {
+    background-color: #434345;
+    color: white;
+    cursor: pointer;
+}
+
+#section__1 i{
+    color: #2E3192;
+}
+
+#section__1 > div > div{
+    line-height: 0.5;
+    box-sizing: border-box;
+    white-space: nowrap;
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+#section__1 > div > div > h4 {
+    color: #2E3192;
+}
+
+#section__1 > div > div > p {
+    font-size: 12px;
+    color: #585858;
+}
+
+#section__2{
+    display: flex;
+    margin-left: 40px;
+    gap: 40px;
+}
+
+#section__2 h4 {
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    margin-left: 40px;
+    color: #3b3a3a;
+}
+
+#section__2 > div {
+    width: 28%;
+}
+
+#section__2 > div > ul {
+    text-align: justify;
+    list-style: none;
+    font-size: 11px;
+}
+
+#section__2 > div > ul >li {
+    font-family: sans-serif;
+    font-size: 19;
+    margin-bottom: 10px;
+    color: #585858;
+}
+
+#section__2 > div > ul >li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#section__2 > div > ul >hr {
+    border: 0.5px solid rgb(235, 232, 232);
+}

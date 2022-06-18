@@ -6,12 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <style>
+ .pillme{
+    width: 100%;
+ }
  #box{
-margin: auto;
+position: absolute;
+
+bottom:0;
+               left:0;
+               padding-left:10px;
+               font-size:17px;
+    margin: auto;
 width: 350px;
-margin-top: 200px;
+margin-left: 500px;
+margin-bottom: 200px;
 height: 180px;
 box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
 }
 #dnavbar {
     width: 100%;
@@ -70,6 +81,13 @@ h2{
     color: white;
     background-color: cornflowerblue;
 }
+a{
+    text-decoration: none;
+    background-color: rgb(46, 49, 146);
+    color: white;
+}
+
+
 </style>
    
 </head>
@@ -84,16 +102,30 @@ h2{
             <p>indiamart</p>
         </div>
     <div>
-        <p>Payment</p>
+        <p><a href="Payment.html">Payment</a></p>
     </div>
     </div>
-    <div id="box">
+ 
+    <div class ="hooej";
+    style="position:relative;">
+        <img style=
+       " width: 100%;
+        height: 550px";
+         src="https://th.bing.com/th/id/OIP._LgGFUJEBjAB_P-NGM4dbwHaE8?w=269&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7">
+    <form>
+         <div id="box">
         <h2>OTP Confirm</h2>
         <input id="otp" placeholder="Type Your Otp here" type="number">    
         <input id="confirm" type="submit" value="Confirm"  >  
         </div>
 
   </form>
+    </div>
+       
+   
+  
+    
+   
     
 </body>
 <script>
@@ -103,6 +135,8 @@ h2{
         var Otp=document.getElementById("otp").value;
         if(Otp==1234){
             alert("Payment Done Succesfully")
+            window.location.href="shopping.html";
+          
         }
     }
 </script>

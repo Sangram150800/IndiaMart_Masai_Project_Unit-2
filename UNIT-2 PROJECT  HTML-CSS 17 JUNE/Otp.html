@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+ .pillme{
+    width: 100%;
+ }
+ #box{
+position: absolute;
+
+bottom:0;
+               left:0;
+               padding-left:10px;
+               font-size:17px;
+    margin: auto;
+width: 350px;
+margin-left: 500px;
+margin-bottom: 200px;
+height: 180px;
+box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+}
+#dnavbar {
+    width: 100%;
+    height: 55px;
+    border: 1px solid transparent;
+    position: static;
+    background-color: rgb(46, 49, 146);
+    display: flex;
+}
+
+#dnavbar>div {
+    border: 1px solid transparent;
+    width: 5%;
+    height: 100%;
+}
+#dnavbar>div:first-child>img {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    margin-left: 25px;
+    margin-top: 10px;
+} 
+#dnavbar>div:nth-child(2)>p {
+    font-size: 26px;
+    position: relative;
+    left: 3px;
+    bottom: 13px;
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+    margin-left: 30px;
+}
+#dnavbar>div:nth-child(3)>p {
+    font-size: 26px;
+    position: relative;
+    left: 3px;
+    bottom: 13px;
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+    margin-left:100px;
+}
+h2{
+    text-align: center;
+    color: blue;
+}
+#otp{
+    margin-left: 90px;
+    height: 35px;
+}
+#confirm{
+    margin-left: 90px;
+    height: 35px;
+    width: 170px;
+    margin-top: 10px;
+    color: white;
+    background-color: cornflowerblue;
+}
+a{
+    text-decoration: none;
+    background-color: rgb(46, 49, 146);
+    color: white;
+}
+
+
+</style>
+   
+</head>
+<body>
+  <form>
+    <div id="dnavbar">
+        <div><img
+                src="https://play-lh.googleusercontent.com/I4JFwFrttTw96tb0HLs0L8KaNSDDj0y189wftAw3j5_FOinXjEQjIA10b0a2nwekQQ=w240-h480-rw"
+                alt=""></div>
+
+        <div>
+            <p>indiamart</p>
+        </div>
+    <div>
+        <p><a href="Payment.html">Payment</a></p>
+    </div>
+    </div>
+ 
+    <div class ="hooej";
+    style="position:relative;">
+        <img style=
+       " width: 100%;
+        height: 550px";
+         src="https://th.bing.com/th/id/OIP._LgGFUJEBjAB_P-NGM4dbwHaE8?w=269&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7">
+    <form>
+         <div id="box">
+        <h2>OTP Confirm</h2>
+        <input id="otp" placeholder="Type Your Otp here" type="number">    
+        <input id="confirm" type="submit" value="Confirm"  >  
+        </div>
+
+  </form>
+    </div>
+       
+   
+  
+    
+   
+    
+</body>
+<script>
+    document.querySelector("form").addEventListener("submit",clear)
+    function clear(){
+        event.preventDefault()
+        var Otp=document.getElementById("otp").value;
+        if(Otp==1234){
+            alert("Payment Done Succesfully")
+            window.location.href="shopping.html";
+          
+        }
+    }
+</script>
+
+</html>

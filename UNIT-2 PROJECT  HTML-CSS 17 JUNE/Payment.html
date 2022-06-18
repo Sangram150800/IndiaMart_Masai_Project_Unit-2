@@ -215,29 +215,28 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px
   
 Card.innerHTML="";
     if(Card > 9999999999999999 || Card < 1000000000000000){
-    alert("Wrong Card no")
-    window.onbeforeunload()
-   // window.location.reload()
+    alert("Wrong Card no" )
+    naam=""
+    Card=""
+    Cv=""
+   window.onbeforeunload()
+   if(Card < 9999999999999999 || Card > 1000000000000000 )
+   
+   window.location.href="Otp.html";
  
 }
+ 
 if(Cv > 9999 || Cv <1000){
     alert("Wrong CVV")
     window.onbeforeunload()
    // window.location.reload()
   
 }
-if(Card > 1000000000000000 || Card < 9999999999999999) {
-    window.location.href="Otp.html";
-}
+
 if(Cv < 9999 || Cv > 1000){
     window.location.href="Otp.html";
 }
-if(Card.innerText== " "){
-    alert("PLease enter card details")
-}
-if(Cv==" "){
-    alert("Please enter Cv")
-}
+
 }
    
 //else{
